@@ -1,0 +1,29 @@
+{
+  "name": "Electic prove of delivery",
+  "short_name": "EPOD",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "description": "Discover EPOD, the revolutionary application for efficient delivery and logistics operations. Real-time tracking, eco-friendly proof of delivery, and customizable features tailored to your business needs.",
+  "icons": [
+    {
+      "src": "./assets/img/logo/logoonly.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/logo/logoonly.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/logo/logoonly.png",
+      "sizes": "72x72 96x96 128x128 256x256"
+    },
+    {
+      "src": "./assets/img/logo/logoonly.png",
+      "sizes": "72x72"
+    }
+  ]
+}

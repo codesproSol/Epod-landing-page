@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="EPOD: Revolutionizing logistics with real-time delivery tracking, eco-friendly proof of delivery, route optimization, and seamless integration. Maximize efficiency and customer satisfaction with EPOD's customizable features tailored to your logistics needs.">
+    <meta name="keywords"
+        content="EPOD, delivery app, logistics solution, proof of delivery, real-time tracking, route optimization, eco-friendly delivery, logistics management, customizable delivery software, courier app, supply chain optimization, delivery tracking app">
+    <meta name="author" content="Libra Circle">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#317EFB">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Open Graph (OG) Tags -->
+    <meta property="og:title" content="EPOD Application - Revolutionizing Logistics" />
+    <meta property="og:description"
+        content="Streamline your logistics operations with EPOD: Real-time delivery tracking, eco-friendly proof of delivery, and customizable features for efficiency and growth." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com/" />
+    <meta property="og:image" content="https://yourwebsite.com/assets/img/logo/og-image.png" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EPOD Application - Revolutionizing Logistics">
+    <meta name="twitter:description"
+        content="Optimize your logistics with EPOD: The ultimate app for real-time tracking, eco-friendly proof of delivery, and more." />
+    <meta name="twitter:image" content="https://yourwebsite.com/assets/img/logo/twitter-image.png">
+    <meta name="twitter:creator" content="@YourTwitterHandle">
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="./assets/img/logo/favicon3.png" type="image/x-icon">
+    <link rel="icon" href="./assets/img/logo/favicon3.png" sizes="32x32">
+    <link rel="icon" href="./assets/img/logo/favicon3.png" sizes="192x192">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="apple-touch-icon" href="./assets/img/logo/favicon3.png" sizes="180x180">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="./webmanifest.json">
+
+    <!-- Title -->
+    <title>EPOD Application - Revolutionizing Logistics and Delivery Efficiency</title>
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+
+<body class="glass-box">
+
+    <header class="hero">
+        <div class="glass-box"></div>
+        <nav class="navbar ">
+            <div class="logo">
+                <img src="./assets/img/logo/1440x208_logo-removebg-preview.png" alt="">
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <a href="#" class="btn btn_primary cta-button hidden">Get Started</a>
+
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Support</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" class="btn btn_primary cta-button">Get Started</a>
+
+            <div class="collapse_menu" id="menuToggle">
+                <div class="menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+            </div>
+        </nav>
+        <div class="hero-content ">
+            <h1 id="dynamicHeading">Revolutionizing Logistics <br /> with <span>EPOD</span> </h1>
+            <p id="dynamicText">Optimize your delivery operations with real-time tracking, eco-friendly proof of
+                delivery, and seamless
+                integration.</p>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Select elements
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        // Add event listener to the menu toggle button
+        menuToggle.addEventListener('click', () => {
+            // Toggle the 'active' class for showing/hiding the menu
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+
+    </script>
+
+    <script>
+        const headingElement = document.getElementById("dynamicHeading");
+        const textElement = document.getElementById("dynamicText");
+
+        // Array of texts for the h1 and p elements
+        const content = [
+            {
+                heading: "Revolutionizing Logistics <br /> with <span>EPOD</span>",
+                text: "Optimize your delivery operations with real-time tracking, eco-friendly proof of delivery, and seamless integration."
+            },
+            {
+                heading: "Experience Seamless Integration <br /> with <span>EPOD</span>",
+                text: "EPOD offers advanced tools for delivery tracking and route optimization, ensuring maximum efficiency."
+            },
+            {
+                heading: "Effortless Logistics Management <br /> Starts with <span>EPOD</span>",
+                text: "Revolutionize your supply chain with innovative, customizable logistics solutions."
+            },
+            {
+                heading: "Deliver with Confidence <br /> Using <span>EPOD</span>",
+                text: "Real-time updates, customer satisfaction, and eco-friendly proof of delivery made simple."
+            }
+        ];
+
+        let contentIndex = 0;
+
+        // Function to update the content
+        function updateContent() {
+            // Fade out
+            headingElement.style.opacity = "0";
+            textElement.style.opacity = "0";
+
+            setTimeout(() => {
+                // Update content after fade-out
+                headingElement.innerHTML = content[contentIndex].heading;
+                textElement.textContent = content[contentIndex].text;
+
+                // Fade in
+                headingElement.style.opacity = "1";
+                textElement.style.opacity = "1";
+
+                // Move to the next content item (loop back to start if at the end)
+                contentIndex = (contentIndex + 1) % content.length;
+            }, 500); // Match fade-out duration
+        }
+
+        // Start the animation cycle
+        setInterval(updateContent, 10000); // Change every 10 seconds
+    </script>
+
+
+
+</body>
+
+</html>
